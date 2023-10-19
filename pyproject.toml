@@ -1,7 +1,5 @@
 [project]
-name = "qredo_assignment"
-description = "Assignment solution by Robert Katona"
+name = "exercise"
+description = "Exercise solution"
 version = "0.1.0"
-authors = [
-    { name = "katonarobert", email = "katona.robert0@gmail.com"}
-]
+authors = [{ name = "katonarobert", email = "katona.robert0@gmail.com" }]

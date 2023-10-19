@@ -1,12 +1,12 @@
 
-# Robert Katona Coding Assignment
+# Coding Exercise
 
-## Directory layout
+## Overview
 
 ```
-qa-robert-katona/
+exercise/
 |   test.sh: tests can be started by running test.sh
-│   README.md: assignment description
+│   README.md: exercise description
 │   TESTME.md: implementation description
 │   requirements.txt: file containing the required pip packages
 │   Dockerfile: docker file to build docker image
@@ -21,24 +21,24 @@ qa-robert-katona/
 └───locustfiles/ : directory containing locust files (only api.py was added so far)
 ```
 
-## Usage
+## Overview
 
 To run the tests, please use the `./test.sh` file. It would go through the feature files and then run a proof-of-concept performance test (ca. 10-15 requests per run).
 Two additional optional flags were added.
 
-### Run it with Allure Reporting
+### Run it with Allure Reporting
 
 To generate allure reports, please use the `./test.sh -a` command.
 It would generate an Allure report under `./allure_reports` folder.
 The performance test would also generate an html report under `./locust_reports` folder.
 
-### Run it using Docker
+### Run it using Docker
 
 To run the tests in a Docker container, please use the `./test.sh -d` command.
 It requires Docker daemon to run in the background (I, myself quickly used MacOS Docker Desktop running in the background).
 It would generate an image, install requirements, then run the tests and print the results on stdout.
 
-## Implementation
+## Implementation
 
 - I used my Mac Mini and VSCode to implement the tests.
 - To decrease the number of API requests (respecting rate limiting), I decided to create 1 `Scenario Outline` for each search category and then verify the result endpoints and detailed endpoints for each search phrase.

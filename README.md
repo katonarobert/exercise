@@ -1,5 +1,5 @@
 
-# QA Coding Assignment
+# Exercise
 
 The goal of this assignment is to build an integration test for an API that provides information on the Star Wars movies (no knowledge of SW is required). The data needed will be queried from [SWAPI (Star Wars API)](https://swapi.dev/) which is an open testing API.
 
